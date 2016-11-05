@@ -1,0 +1,102 @@
+.showcase-fa .slider a h3 {
+    text-align: right;
+    font-family: 'IranSans';
+}
+
+.showcase-fa .slider h5 {
+    text-align: right;
+    font-size: 17px;
+    font-family: 'IranSans';
+}
+
+.showcase-fa .playlist h3 {
+    font-family: 'IranSans';
+    text-align: right;
+    font-size: 25px;
+}
+
+.showcase-fa .playlist h3 a .fa {
+    vertical-align: middle;
+}
+
+.showcase-fa .duration_txt {
+    left: 10px;
+    font-family: 'IranSans';
+}
+
+.showcase-fa .duration_txt span {
+    position: absolute;
+    margin-left: 3px;
+}
+
+.showcase-fa .video_list a .title {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.showcase-fa .video_list a .title, .showcase-fa .video_list a .description {
+    text-align: right;
+    direction: rtl;
+    font-family: IranSans;
+}
+
+.showcase-fa footer p {
+    font-family: IranSans;
+}
+
+.page-category .cat-head h1 {
+    font-family: IranSans;
+}
+
+.video_meta .meta-title, .video_meta .meta-description {
+    text-align: right;
+    font-family: IranSans;
+}
+
+.showcase-fa .video_meta {
+    direction: rtl;
+}
+
+.meta-social {
+    right: 100px;
+    left: inherit;
+}
+
+/*.related_video{
+    left:30px;
+}
+.double-left_video{
+    left: 115px;
+}*/
+.responsive_slider .item_image h3 {
+    text-align: right;
+    right: 15px;
+}
+
+.responsive_slider .item_image h3, .responsive_slider .item .caption {
+    font-family: IranSans;
+    direction: rtl;
+
+}
+
+.category_video .title-content, .mymodal .header .title, .mymodal span.nextvideo {
+    right: 20px;
+    left: inherit;
+    font-family: IranSans;
+}
+
+.mymodal .fa-times {
+    left: 20px;
+    right: inherit;
+}
+
+.mymodal .description {
+    text-align: right;
+    right: 20px;
+    font-family: IranSans;
+}
+
+.video_meta .meta-duration {
+    font-family: IranSans;
+    font-size: 13px;
+}

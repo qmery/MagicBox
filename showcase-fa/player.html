@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>player</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/master-rtl.css">
+
+
+</head>
+<body>
+<div class="container-fluid no_padding showcase-fa">
+    <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding video_player">
+        <!-- Modal -->
+        <div class="top_icon">
+            <a href="#" class="related_video" data-toggle="tooltip" title="Relared Videos" data-placement="bottom">
+                <img src="images/related.svg">
+            </a>
+            <a href="index.html" class="double-left_video">
+                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+            </a>
+        </div>
+        <a href="#">
+            <div class="video col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding">
+					<iframe id="player" src="" allowtransparency="true" scrolling="no" name="qmery_embed_video" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" oallowfullscreen="" msallowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+
+            </div>
+			<!--
+            <div class="overlay_player">
+                <div class="play-button">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="overlay_video"></div>
+            <div class="video_meta">
+                <div class="meta-title">تست 1</div>
+                <div class="meta-duration"><span>3</span>دقیقه</div>
+                <div class="meta-description">
+                    <p class="ng-binding">
+                        شاید باور نکنید ولی اگر یک نفر بخواهد به تنهایی کل ویدئوهایی که در یک ماه در اینترنت دیده می شود
+                        را بببیند حدود 5 میلیون سال طول می کشد!
+                        این روزها همه ویدئو تماشا می کنند، اقتصاد، رسانه، سرگرمی و حتی مذهب نیز از طریق ویدئو بر روی وب
+                        منتشر می شود و به دست مخاطبان می رسد
+
+                    </p>
+                </div>
+            </div>
+            <ul class="meta-social">
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="mymodal">
+                <div class="header">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <span class="title">ویدیو های مرتبط</span>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 category_video animated fadeIn">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  left_video no_padding">
+                        <a href="#" style="background-image: url('images/v7.jpg')">
+                            <div class="overlay_player" style=" "></div>
+                            <div class="play">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding" style="height: 100%">
+                                <span class="nextvideo">بعدی</span>
+                                <div class="description">
+                                    <h3>تست1</h3>
+                                    <p>استفاده از ویدئو به کاربران شما این امکان را می دهد که فرصت آشنایی با فعالیت
+                                        تجاری شما را به خوبی داشته باشند و احساس بسیار خوبی نسبت به آنچه که در شرکت شما
+                                        رخ می دهد نیز داشته باشند...</p>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 center_video ">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding ">
+                            <a href="#" style="background-image: url('images/v1.jpg')">
+                                <div class="overlay_player"></div>
+                                <div class="title-content"><span>تست2</span></div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding">
+                            <a href="#" style="background-image: url('images/v2.jpg')">
+                                <div class="overlay_player"></div>
+                                <div class="title-content"><span>تست3</span></div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  no_padding">
+                            <a href="#" style="background-image: url('images/v3.jpg')">
+                                <div class="overlay_player"></div>
+                                <div class="title-content"><span>تست4</span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  right_video">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding">
+                            <a href="#" style="background-image: url('images/v4.jpg')">
+                                <div class="overlay_player"></div>
+                                <div class="title-content"><span>تست5</span></div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding">
+                            <a href="#" style="background-image: url('images/v5.jpg')">
+                                <div class="overlay_player"></div>
+                                <div class="title-content"><span>تست6</span></div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding">
+                            <a href="index.html" style="background-image: url('images/v6.jpg')">
+                                <div class="overlay_player"></div>
+                                <div class="title-content"><span>تست7</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </a>
+
+    </section>
+
+    <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 playlist no_padding">
+	<h3 class="qmsc-groupName"></h3>
+        <section id="categoryHolder">
+            <section class="qmsc-listholder playlist_slider"></section>
+        </section>
+	</section>
+    </section>
+    <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding">
+        <p>کلیه ی حقوق این سایت مربوط به شرکت خلاق برهان می باشد</p>
+    </footer>
+
+</div>
+
+<script src="script/respond.js"></script>
+<script src="script/jquery-1.11.1.js" type="text/javascript"></script>
+<script src="script/bootstrap.min.js"></script>
+<script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="script/custom.js"></script>
+<script src="script/main.js"></script>
+<script>
+    $(document).ready(function () {
+		var video = window.location.href.split('?').pop();
+		var videoData;
+		$('#player').attr('src','http://www.qmery.com/v/'+ video);
+        $('[data-toggle="tooltip"]').tooltip();
+		$.ajax({
+			url	:	'http://api.qmery.com/v1/videos/' + video + '.json',
+			data : {
+				api_token : qmeryConfig.token
+			},
+			success : function(data) {
+				//$('#player').attr('src','http://www.qmery.com/v/'+ video);
+				videoData = data;
+				document.title = data.title;
+				category = {"hash_id":videoData.group_hash};
+				$('.qmsc-groupName').html(videoData.group_name);
+				qmery(category);
+			}
+		})
+
+    });
+	//qmery()
+</script>
+
+
+</body>
+</html>

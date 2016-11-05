@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>category</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/master-rtl.css">
+</head>
+<body class="catbody">
+<div class="container-fluid no_padding showcase-fa">
+    <header class="page-category">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cat-head no_padding"><h1 class="qmsc-groupName"></h1>
+            <a href="index.html">
+                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+            </a>
+        </div>
+    </header>
+	<section id="categoryHolder">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 content_category qmsc-listholder">
+			
+		</div>
+	</section>
+
+</div>
+<script src="script/jquery-1.11.1.js" type="text/javascript"></script>
+<script src="script/main.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	var group = window.location.href.split('?').pop();
+	category = {"hash_id":group};
+	qmery(category,function(data){
+		$('.qmsc-img').css('height','164px;');
+		$('.video_list').addClass('col-lg-3 col-md-4 col-sm-6 col-xs-6');
+		$('.qmsc-groupName').html(data.title);
+	});
+	
+})
+</script>
+</body>
+</html>

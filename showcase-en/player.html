@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/master.css">
+
+</head>
+<body>
+<div class="container-fluid no_padding">
+    <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding video_player">
+        <!-- Modal -->
+        <div class="top_icon">
+            <a href="#" class="related_video" data-toggle="tooltip" title="Relared Videos" data-placement="bottom">
+                <img src="images/related.svg">
+            </a>
+            <a href="index.html" class="double-left_video">
+                <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+            </a>
+        </div>
+        <a href="#">
+            <div class="video col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding">
+                <iframe id="player" src="http://www.qmery.com/v/dQXOekZLRY?lan=fa&mobile=false" allowtransparency="true"
+                        scrolling="no" name="qmery_embed_video" allowfullscreen="" mozallowfullscreen=""
+                        webkitallowfullscreen="" oallowfullscreen="" msallowfullscreen="" frameborder="0" height="360"
+                        width="640"></iframe>
+                </iframe>
+            </div>
+			<!--
+            <div class="overlay_player">
+                <div class="play-button">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="overlay_video"></div>
+            <div class="video_meta">
+                <div class="meta-title">Spotlight</div>
+                <div class="meta-duration"><span>3 min</span></div>
+                <div class="meta-description">
+                    <p class="ng-binding">Starring Michael Keaton, Mark Ruffalo, Rachel McAdams, Liev Schreiber, Brian
+                        d’Arcy James and Stanley Tucci, Spotlight tells the riveting true story of the Pulitzer
+                        Prize-winning Boston Globe investigation that would rock the city and cause a crisis in one of
+                        the world’s oldest and most trusted institutions.
+                    </p>
+                </div>
+            </div>
+            <ul class="meta-social">
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="mymodal">
+                <div class="header">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <span class="title">Relared Videos</span>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 category_video animated fadeIn">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  left_video no_padding">
+                        <a href="#" style="background-image: url('images/v7.jpg')">
+                            <div class="overlay_player" style=" "></div>
+                            <div class="play">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding" style="height: 100%">
+                                <span class="nextvideo">Next Up</span>
+                                <div class="description">
+                                    <h3>The Girl in the Book</h3>
+                                    <p>Set in the world of NYC publishing, a young book editor is forced to confront a
+                                        troubling part of her past when a bestselling author re-enters her life.</p>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 center_video ">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding ">
+                            <a href="#" style="background-image: url('images/v1.jpg')">
+                                <div class="overlay_player"></div>
+                                <div class="title-content"><span>Touched with Fire</span></div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding">
+                            <a href="#" style="background-image: url('images/v2.jpg')">
+                                <div class="overlay_player"></div>
+                                <div class="title-content"><span>Carol</span></div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  no_padding">
+                            <a href="#" style="background-image: url('images/v3.jpg')">
+                                <div class="overlay_player"></div>
+                                <div class="title-content"><span>Lamb</span></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  right_video">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding">
+                            <a href="#" style="background-image: url('images/v4.jpg')">
+                                <div class="overlay_player"></div>
+                                <div class="title-content"><span>Concussion</span></div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding">
+                            <a href="#" style="background-image: url('images/v5.jpg')">
+                                <div class="overlay_player"></div>
+                                <div class="title-content"><span>Eye in the Sky</span></div>
+                            </a>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding">
+                            <a href="index.html" style="background-image: url('images/v6.jpg')">
+                                <div class="overlay_player"></div>
+                                <div class="title-content"><span>Mustang</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </a>
+
+    </section>
+
+    <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 playlist no_padding">
+	<h3 class="qmsc-groupName"></h3>
+        <section id="categoryHolder">
+            <section class="qmsc-listholder playlist_slider"></section>
+        </section>
+	</section>
+    <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no_padding">
+        <p>Powered by Qmery</p>
+    </footer>
+
+</div>
+
+<script src="script/respond.js"></script>
+<script src="script/jquery-1.11.1.js" type="text/javascript"></script>
+<script src="script/bootstrap.min.js"></script>
+<script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="script/custom.js"></script>
+<script src="script/main.js"></script>
+<script>
+    $(document).ready(function () {
+		var video = window.location.href.split('?').pop();
+		var videoData;
+		$('#player').attr('src','http://www.qmery.com/v/'+ video);
+        $('[data-toggle="tooltip"]').tooltip();
+		$.ajax({
+			url	:	'http://api.qmery.com/v1/videos/' + video + '.json',
+			data : {
+				api_token : qmeryConfig.token
+			},
+			success : function(data) {
+				//$('#player').attr('src','http://www.qmery.com/v/'+ video);
+				document.title = data.title;
+				videoData = data;
+				category = {"hash_id":videoData.group_hash};
+				$('.qmsc-groupName').html(videoData.group_name);
+				qmery(category);
+			}
+		})
+
+    });
+</script>
+
+
+</body>
+</html>
