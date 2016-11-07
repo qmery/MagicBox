@@ -5,8 +5,8 @@ var qmeryConfig = {
 	"sliderSortDir" 	: "desc",	// asc, desc
 	"categorySort" 		: "videos",	// id, title, videos, create_date, last_modified
 	"categorySortDir"	: "desc",	// asc, desc
-	"categoryVideoLimit": 10 		// 0 for unlimited
-	"pageTitle"			: "My Channel"
+	"categoryVideoLimit": 10, 		// 0 for unlimited
+	"pageTitle"			: "My Channel",
 }
 
 var qmerySlider = function(){
@@ -52,7 +52,6 @@ var qmerySlider = function(){
 			"per_page"	: qmeryConfig.sliderSlides
 		},
 		"success" : function(data) {
-			console.log(data);
 			$.each(data, function(k,v){
 				t = $(template).clone();
 				st = $(smallTemplate).clone();
@@ -61,7 +60,7 @@ var qmerySlider = function(){
 				t.find('.qmsc-img').attr('src',v.thumbnail[0])
 				t.find('.qmsc-link').attr('href','player.html?' + v.hash_id);
 				t.appendTo($('.slider'));
-				console.log(v);
+				
 				st = $(smallTemplate).clone();
 				st.find('.qmsc-title').html(v.title)
 				st.find('.qmsc-desc').html(v.description)
@@ -183,7 +182,7 @@ var qmery = function(groupHash,callback){
 	}
 	
 	renderCategoryVideos = function(holder,category) {
-		console.log(holder);
+		
 		var holder = holder;
 		$.each(category.videos,function(k,v){
 				if(!v.link.length)
